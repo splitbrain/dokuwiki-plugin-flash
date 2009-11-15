@@ -77,13 +77,13 @@ class syntax_plugin_flash extends DokuWiki_Syntax_Plugin {
         // strip configs to find swf
         $conf = preg_replace('/\b(left|center|right|(\d+)x(\d+))\b/i','',$conf);
         $conf = trim($conf);
-        $return['swf'] = ml($conf);
+        $return['swf'] = ml($conf,'',true,'&');
 
         // parse parameters
         $return['data'] = linesToHash($lines);
         foreach($return['data'] as $key => $val){
             if($key{0} == '!') {
-                $return['data'][substr($key,1)] = ml($val);
+                $return['data'][substr($key,1)] = ml($val,'',true,'&');
                 unset($return['data'][$key]);
             }
         }
