@@ -20,7 +20,7 @@ class syntax_plugin_flash extends DokuWiki_Syntax_Plugin {
      * return some info
      */
     function getInfo(){
-        return conf2hash(dirname(__FILE__).'/plugin.info.txt');
+        return confTohash(dirname(__FILE__).'/plugin.info.txt');
     }
 
     /**
