@@ -1,7 +1,7 @@
 base   flash
 author Andreas Gohr
 email  andi@splitbrain.org
-date   2011-02-05
+date   2014-05-21
 name   Flash Embed Plugin
 desc   Embed a Flash SWF file with any number of parameters
 url    http://www.dokuwiki.org/plugin:flash
